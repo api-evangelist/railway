@@ -1,8 +1,8 @@
 aid: railway
 name: Railway
 description: >-
-  The Railway public API is built with GraphQL and is the same API that powers
-  the Railway dashboard. 
+  The Railway public API is built with GraphQL and is the same API that powers the
+  Railway dashboard.
 type: Index
 position: Consumer
 access: 3rd-Party
@@ -18,8 +18,8 @@ apis:
   - aid: railway:railway
     name: Railway
     description: >-
-      The Railway public API is built with GraphQL and is the same API that
-      powers the Railway dashboard. 
+      The Railway public API is built with GraphQL and is the same API that powers
+      the Railway dashboard.
     humanURL: ' https://docs.railway.com/reference/public-api'
     tags:
       - API
