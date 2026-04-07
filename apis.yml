@@ -7,8 +7,7 @@ type: Index
 position: Consumer
 access: 3rd-Party
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
-tags:
-  - API
+tags: []
 created: '2025-02-06'
 modified: '2025-02-06'
 url: >-
@@ -21,8 +20,7 @@ apis:
       The Railway public API is built with GraphQL and is the same API that powers
       the Railway dashboard.
     humanURL: ' https://docs.railway.com/reference/public-api'
-    tags:
-      - API
+    tags: []
     properties:
       - type: Documentation
         url: ' https://docs.railway.com/reference/public-api'
