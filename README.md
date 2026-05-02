@@ -37,7 +37,7 @@ The Railway public API is a GraphQL API that powers the Railway dashboard, enabl
 - [GettingStarted](https://docs.railway.com/guides/public-api)
 - [GraphQL](https://backboard.railway.com/graphql/v2)
 - [Playground](https://railway.com/graphiql)
-- [Postman](https://raw.githubusercontent.com/api-evangelist/railway/refs/heads/main/postman/railway-postman.json)
+- [Postman](https://raw.githubusercontent.com/api-evangelist/railway/refs/heads/main/)
 
 ## Common
 

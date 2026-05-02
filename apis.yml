@@ -43,7 +43,7 @@ apis:
       - type: Playground
         url: https://railway.com/graphiql
       - type: Postman
-        url: https://raw.githubusercontent.com/api-evangelist/railway/refs/heads/main/postman/railway-postman.json
+        url: https://raw.githubusercontent.com/api-evangelist/railway/refs/heads/main/
 common:
   - type: Documentation
     url: https://docs.railway.com/
