@@ -1,0 +1,58 @@
+specification: FinOps Framework
+specificationVersion: '1.0'
+schema: https://www.finops.org/framework/
+provider: Railway
+providerId: railway
+created: '2026-05-04'
+modified: '2026-05-04'
+reconciled: true
+tags:
+  - FinOps
+  - FOCUS
+  - Edge Hosting
+description: FOCUS-aligned FinOps for Railway.
+sources:
+  - https://railway.com/pricing
+alignedWith:
+  framework: FinOps Foundation Framework
+  frameworkUrl: https://www.finops.org/framework/
+  dataSpec: FOCUS
+  dataSpecVersion: '1.3'
+  dataSpecUrl: https://focus.finops.org/focus-specification/v1-3/
+publisherName: Railway
+serviceCategory: Edge Hosting
+billingModel:
+  pricingCategory: Subscription + Per-Resource Metered
+  billingFrequency: Monthly
+  billingCurrency: USD
+focusColumns:
+  ServiceName: Railway
+  ServiceCategory: Edge Hosting
+  ProviderName: Railway
+  PublisherName: Railway
+  BillingCurrency: USD
+meters:
+  - name: memory_gb_seconds
+    unit: GB-second
+    aggregation: sum
+  - name: cpu_vcpu_seconds
+    unit: vCPU-second
+    aggregation: sum
+  - name: volume_gb_seconds
+    unit: GB-second
+    aggregation: sum
+  - name: egress
+    unit: GB
+    aggregation: sum
+  - name: workspace_seats
+    unit: seat-month
+    aggregation: max
+principles:
+  - name: Visibility
+    description: Track Railway consumption monthly.
+  - name: Allocation
+    description: Tag usage to teams/cost centers.
+  - name: Optimization
+    description: Right-size; reclaim unused entitlements.
+  - name: Accountability
+    description: Set spend alerts; quarterly review.
