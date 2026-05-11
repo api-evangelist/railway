@@ -74,6 +74,12 @@ common:
     sources:
       - https://railway.com/pricing
     updated: '2026-05-04'
+  - type: Integrations
+    url: https://docs.railway.com/integrations
+integrations:
+  - name: OAuth
+  - name: Stripe Provisioning
+  - name: Railway GraphQL API
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
