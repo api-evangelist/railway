@@ -41,6 +41,10 @@ apis:
       - type: Postman
         url: https://raw.githubusercontent.com/api-evangelist/railway/refs/heads/main/
 common:
+  - type: GitHubOrganization
+    url: https://github.com/railwayapp
+  - type: LinkedIn
+    url: https://www.linkedin.com/company/railwayapp
   - type: Documentation
     url: https://docs.railway.com/
   - type: GettingStarted
