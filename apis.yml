@@ -80,6 +80,8 @@ common:
     updated: '2026-05-04'
   - type: Integrations
     url: https://docs.railway.com/integrations
+  - type: LLMsTxt
+    url: https://docs.railway.com/llms.txt
 integrations:
   - name: OAuth
   - name: Stripe Provisioning
