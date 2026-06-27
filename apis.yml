@@ -48,7 +48,7 @@ common:
   url: https://docs.railway.com/
 - type: GettingStarted
   url: https://docs.railway.com/guides/public-api
-- type: SignUp
+- type: Signup
   url: https://railway.com/login
 - type: Pricing
   url: https://railway.com/pricing
@@ -79,7 +79,7 @@ common:
   updated: '2026-05-04'
 - type: Integrations
   url: https://docs.railway.com/integrations
-- type: LLMsTxt
+- type: LlmsText
   url: https://docs.railway.com/llms.txt
 integrations:
 - name: OAuth
