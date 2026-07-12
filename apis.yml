@@ -40,6 +40,10 @@ apis:
   - url: graphql/railway-graphql.md
     type: GraphQL
 common:
+- type: TrustCenter
+  url: security/railway-trust-center.yml
+- type: DomainSecurity
+  url: security/railway-domain-security.yml
 - type: GitHubOrganization
   url: https://github.com/railwayapp
 - type: LinkedIn
@@ -81,6 +85,8 @@ common:
   url: https://docs.railway.com/integrations
 - type: LlmsText
   url: https://docs.railway.com/llms.txt
+- type: Blog
+  url: https://blog.railway.com/rss.xml
 integrations:
 - name: OAuth
 - name: Stripe Provisioning
