@@ -1,0 +1,558 @@
+# Railway Documentation
+
+> Railway is an all-in-one intelligent cloud provider that makes it easy to provision infrastructure, develop locally, and deploy to the cloud. These docs cover deploying applications, configuring services, managing data, networking, observability, the CLI, and integrating with Railway's API.
+
+The full contents of these docs are also available as a single file at https://docs.railway.com/llms-full.txt. Individual pages are available as clean markdown by appending `.md` to any page URL.
+
+- [Quick start](https://docs.railway.com/quick-start.md): Get started with Railway in minutes! This Quick Start tutorial walks you through deploying your first app via GitHub, the CLI, a Docker image, or a template.
+- [The basics](https://docs.railway.com/overview/the-basics.md): Learn about the core concepts of Railway.
+- [Railway for Agents](https://docs.railway.com/agents.md): Set up Railway for AI coding agents — install the CLI, configure MCP, and add agent skills in one step.
+- [Mobile app](https://docs.railway.com/mobile-app.md): Install the Railway mobile app on iOS and sign in to check on your projects from your phone.
+- [Best practices](https://docs.railway.com/overview/best-practices.md): Learn the best practices to maximize performance, efficiency, and scalability of your apps on Railway.
+- [Advanced concepts](https://docs.railway.com/overview/advanced-concepts.md): A guide that outlines the advanced concepts of Railway.
+- [Production readiness checklist](https://docs.railway.com/overview/production-readiness-checklist.md): Ensure your app is production-ready with this comprehensive Railway checklist.
+- [Guides](https://docs.railway.com/guides.md)
+- [Keyboard shortcuts](https://docs.railway.com/overview/keyboard-shortcuts.md): A reference of keyboard shortcuts available in the Railway dashboard, canvas, and data views.
+
+## Platform
+
+- [Platform](https://docs.railway.com/platform.md): Railway is a modern cloud deployment platform designed to help developers deploy instantly and scale apps effortlessly. Learn about the Railway platform.
+- [Philosophy](https://docs.railway.com/platform/philosophy.md): Explore Railway’s core philosophy and the principles that drive the Railway platform.
+- [Use cases](https://docs.railway.com/platform/use-cases.md): Explore real-world use cases for deploying and managing applications on Railway.
+- [Support](https://docs.railway.com/platform/support.md): Learn about Railway's support channels.
+- [Incident management](https://docs.railway.com/platform/incident-management.md): Learn how Railway handles incident management.
+- [Railway Metal](https://docs.railway.com/platform/railway-metal.md): Railway Metal is Railway’s own cloud infrastructure, built for high-performance, scalable, and cost-efficient app deployments. Learn how it works.
+- [Priority boarding](https://docs.railway.com/platform/priority-boarding.md): Priority Boarding is Railway's beta program for getting access early to new features. Learn how to be a part of it.
+
+### Compare to Railway
+
+- [Compare to Heroku](https://docs.railway.com/platform/compare-to-heroku.md): Compare Railway and Heroku on infrastructure, pricing model and deployment experience, with a step-by-step migration guide.
+- [Compare to Render](https://docs.railway.com/platform/compare-to-render.md): Compare Railway and Render on infrastructure, pricing model and dashboard experience, with a step-by-step migration guide.
+- [Compare to Fly](https://docs.railway.com/platform/compare-to-fly.md): Compare Railway and Fly.io on deployment model, scaling, pricing and developer workflow, with a step-by-step migration guide.
+- [Compare to Northflank](https://docs.railway.com/platform/compare-to-northflank.md): Compare Railway and Northflank on infrastructure, scaling, pricing, deployment experience, and AI capabilities, with a step-by-step migration guide.
+- [Compare to Vercel](https://docs.railway.com/platform/compare-to-vercel.md): Compare Railway and Vercel on infrastructure, pricing model and deployment experience, with a step-by-step migration guide.
+- [Compare to DigitalOcean](https://docs.railway.com/platform/compare-to-digitalocean.md): Compare Railway and DigitalOcean App Platform on infrastructure, pricing model and deployment experience, with a step-by-step migration guide.
+- [Compare to Replit](https://docs.railway.com/platform/compare-to-replit.md): Compare Railway and Replit on development workflow, infrastructure control, scaling, and production readiness, with a step-by-step migration guide.
+- [Compare to Lovable](https://docs.railway.com/platform/compare-to-lovable.md): Compare Railway and Lovable on what they do, infrastructure control, and production readiness, with a step-by-step migration guide.
+- [Compare to Bolt](https://docs.railway.com/platform/compare-to-bolt.md): Compare Railway and Bolt on what they do, infrastructure control, and production readiness, with a step-by-step migration guide.
+- [Compare to VPS](https://docs.railway.com/platform/compare-to-vps.md): Compare Railway and VPS hosting on infrastructure management, security, monitoring, pricing, and operational overhead, with a step-by-step migration guide.
+
+### Migrate to Railway
+
+- [Migrate from Heroku](https://docs.railway.com/platform/migrate-from-heroku.md): Learn how to migrate your apps from Heroku to Railway with this step-by-step guide. Fast, seamless, and hassle-free.
+- [Migrate from Render](https://docs.railway.com/platform/migrate-from-render.md): Learn how to migrate your apps from Render to Railway with this step-by-step guide. Fast, seamless, and hassle-free.
+- [Migrate from Fly](https://docs.railway.com/platform/migrate-from-fly.md): Learn how to migrate your apps from Fly.io to Railway with this step-by-step guide. Fast, seamless, and hassle-free.
+- [Migrate from Vercel](https://docs.railway.com/platform/migrate-from-vercel.md): Learn how to migrate your Next.js app from Vercel to Railway with this step-by-step guide. Fast, seamless, and hassle-free.
+- [Migrate from DigitalOcean](https://docs.railway.com/platform/migrate-from-digitalocean.md): Learn how to migrate your WordPress site from DigitalOcean to Railway with this step-by-step guide. Fast, seamless, and hassle-free.
+- [Migrate from Replit](https://docs.railway.com/platform/migrate-from-replit.md): Step-by-step guide to migrate a Replit project to Railway. Covers code export, environment variables, database migration, and deployment configuration.
+- [Migrate from Lovable](https://docs.railway.com/platform/migrate-from-lovable.md): Step-by-step guide to migrate a Lovable-generated app to Railway. Covers GitHub export, environment variables, database setup, and production configuration.
+- [Migrate from Bolt](https://docs.railway.com/platform/migrate-from-bolt.md): Step-by-step guide to migrate a Bolt-generated app to Railway. Covers code export, environment variables, and production deployment.
+
+## Pricing
+
+- [Pricing](https://docs.railway.com/pricing.md): Learn how Railway's pricing works - usage-based pricing with plans designed to scale with your needs.
+- [Plans](https://docs.railway.com/pricing/plans.md): Learn about Railway's plans and pricing.
+- [Free trial](https://docs.railway.com/pricing/free-trial.md): Learn about Railway's free trial plan.
+- [Understanding your bill](https://docs.railway.com/pricing/understanding-your-bill.md): Learn how Railway billing works, why you're charged when idle, and how to read your invoice.
+- [FAQs](https://docs.railway.com/pricing/faqs.md): General common Questions & Answers related to Railway's pricing.
+- [Refunds](https://docs.railway.com/pricing/refunds.md): Learn about Railway’s refund policy and how to request a refund if eligible.
+- [Cost control](https://docs.railway.com/pricing/cost-control.md): Optimize your Railway projects for budget-friendly billing by setting limits and activating serverless.
+- [Committed spend](https://docs.railway.com/pricing/committed-spend.md): Learn about Railway's committed spend tier system.
+- [AWS Marketplace](https://docs.railway.com/pricing/aws-marketplace.md): Learn about Railway's AWS Marketplace offering and pricing.
+- [Credits](https://docs.railway.com/pricing/credits.md): Learn how credits apply to your Railway account if part of a promotion.
+
+## Enterprise
+
+- [Enterprise](https://docs.railway.com/enterprise.md): Railway Enterprise is for organizations that require enterprise-grade security, dedicated resources, and comprehensive control over their infrastructure.
+- [Compliance](https://docs.railway.com/enterprise/compliance.md): Learn about Railway's compliance standards and how we ensure security and regulatory adherence.
+- [Audit logs](https://docs.railway.com/enterprise/audit-logs.md): Learn more about how Railway keeps a record of actions in workspaces.
+- [SAML SSO](https://docs.railway.com/enterprise/saml.md): Learn about how to configure and use SAML Single Sign-On (SSO) for your Railway workspace.
+- [Access groups](https://docs.railway.com/enterprise/access-groups.md): Control which workspace members can access projects by assigning roles to groups of people and projects.
+- [Environment RBAC](https://docs.railway.com/enterprise/environment-rbac.md): Restrict access to sensitive environments like production with role-based access control.
+- [Guardrails](https://docs.railway.com/enterprise/guardrails.md): Enforce workspace-level policies that restrict public networking and deployment sources.
+
+## AI
+
+- [AI](https://docs.railway.com/ai.md): Integrate Railway with AI assistants using plugins, connectors, Agent Skills, and the Railway MCP Server.
+- [Railway Agent](https://docs.railway.com/ai/railway-agent.md): Chat with the Railway Agent to manage services, diagnose failures, and ship fixes directly from the Railway dashboard.
+- [Agent Connectors](https://docs.railway.com/ai/agent-connectors.md): Connect Notion, Linear, Sentry, or your own MCP server to Railway's agent, then attach them as context in dashboard chat and dev.new.
+- [Cloud agents](https://docs.railway.com/cloud-agents.md): Run Claude Code, Codex, or Grok CLI on a persistent Railway virtual machine. Hand off tasks, manage sessions from the terminal or dashboard, and reconnect with your work still in place.
+- [Agent skills](https://docs.railway.com/ai/agent-skills.md): Agent skills for interacting with Railway directly from your AI coding assistant.
+- [MCP server](https://docs.railway.com/ai/mcp-server.md): Connect AI coding agents to Railway through Local MCP or Remote MCP.
+
+### Agent integrations
+
+- [Agent integrations](https://docs.railway.com/ai/agent-integrations.md): Bring the Railway Agent into your team chat — mention @Railway in Slack or Discord to work with your projects from the conversation.
+- [Slack](https://docs.railway.com/ai/agent-integrations/slack.md): Install the Railway Agent in your Slack workspace and work with your projects from chat.
+- [Discord](https://docs.railway.com/ai/agent-integrations/discord.md): Install the Railway Agent in your Discord server and work with your projects from chat.
+
+### Plugins and connectors
+
+- [Plugins and connectors](https://docs.railway.com/ai/plugins-and-connectors.md): Choose a Railway integration for ChatGPT, Codex, Claude, Claude Code, Grok Build, or Cursor.
+- [ChatGPT plugin](https://docs.railway.com/ai/chatgpt-plugin.md): Install the Railway plugin for ChatGPT to deploy and manage Railway infrastructure through the hosted Railway MCP server.
+- [Codex plugin](https://docs.railway.com/ai/codex-plugin.md): Install the Railway plugin for OpenAI Codex to deploy and manage Railway infrastructure with Agent Skills and hosted MCP.
+- [Claude connector](https://docs.railway.com/ai/claude-connector.md): Connect Railway to Claude through OAuth and Railway's hosted MCP server.
+- [Claude Code plugin](https://docs.railway.com/ai/claude-code-plugin.md): Install the Railway plugin for Claude Code to manage your infrastructure with natural language.
+- [Grok Build plugin](https://docs.railway.com/ai/grok-build-plugin.md): Install the Railway plugin for Grok Build from xAI's official plugin marketplace.
+- [Cursor plugin](https://docs.railway.com/ai/cursor-plugin.md): Install the Railway plugin for Cursor to manage Railway infrastructure with Agent Skills and hosted MCP.
+
+## Templates & open source
+
+- [Templates & Open Source](https://docs.railway.com/templates.md): Everything you need to know about Railway templates and the open source partner program.
+- [Open source technology partners](https://docs.railway.com/templates/partners.md): Grow your open source projects and products on Railway.
+
+### Using templates
+
+- [Deploy](https://docs.railway.com/templates/deploy.md): Learn how to deploy Railway templates.
+- [Create](https://docs.railway.com/templates/create.md): Learn how to create reusable templates on Railway to enable effortless one-click deploys.
+- [Updates](https://docs.railway.com/templates/updates.md): Learn how template updates work for authors and consumers.
+- [Best practices](https://docs.railway.com/templates/best-practices.md): Learn the best practices for template creation.
+- [Publish and share](https://docs.railway.com/templates/publish-and-share.md): Learn how to publish and share your Railway templates.
+
+### Monetizing templates
+
+- [Kickbacks](https://docs.railway.com/templates/kickbacks.md): Earn revenue from your templates through Railway's kickback program.
+- [Private Docker images](https://docs.railway.com/templates/private-docker-images.md): Create templates with private Docker images to distribute proprietary code through Railway and uniquely monetize.
+- [Metrics](https://docs.railway.com/templates/metrics.md): Track deployments, earnings, and health metrics for your published templates.
+
+## Languages & frameworks
+
+- [Languages & Frameworks](https://docs.railway.com/languages-frameworks.md): Deploy applications using any language or framework on Railway.
+
+### JavaScript / TypeScript
+
+- [Next.js](https://docs.railway.com/guides/nextjs.md): Deploy a Next.js app with a Postgres database on Railway. Covers standalone output, one-click deploys, Dockerfile setup, database wiring, and pre-deploy migrations.
+- [Express](https://docs.railway.com/guides/express.md): Learn how to deploy an Express app to Railway with one-click templates, GitHub, CLI, or Dockerfile. This guide covers setup, private networking, database integration, and deployment strategies.
+- [Hono](https://docs.railway.com/guides/hono.md): Learn how to deploy a Hono app to Railway with this step-by-step guide. It covers quick setup, community templates, Dockerfile and other deployment strategies.
+- [Fastify](https://docs.railway.com/guides/fastify.md): Learn how to deploy a Fastify app to Railway with this step-by-step guide. It covers quick setup, one-click deploys, Dockerfile and other deployment strategies.
+- [Nest.js](https://docs.railway.com/guides/nest.md): Learn how to deploy a NestJS app to Railway with this step-by-step guide. It covers quick setup, database integration, one-click deploys and other deployment strategies.
+- [Remix](https://docs.railway.com/guides/remix.md): Learn how to deploy a Remix app to Railway with this step-by-step guide. It covers quick setup, one-click deploys, Dockerfile and other deployment strategies.
+- [Nuxt](https://docs.railway.com/guides/nuxt.md): Learn how to deploy a Nuxt app to Railway with this step-by-step guide. It covers quick setup, one-click deploys, Dockerfile and other deployment strategies.
+- [Astro](https://docs.railway.com/guides/astro.md): Learn how to deploy an Astro app to Railway with this step-by-step guide. It covers quick setup, server side rendering, one-click deploys, Dockerfile and other deployment strategies.
+- [SvelteKit](https://docs.railway.com/guides/sveltekit.md): Learn how to deploy a Sveltekit app to Railway with this step-by-step guide. It covers quick setup, adapter configuration, one-click deploys and other deployment strategies.
+- [Bun](https://docs.railway.com/guides/bun.md): Learn how to deploy a Bun app to Railway with this step-by-step guide. It covers one-click deploys, Dockerfile setup, and other deployment strategies.
+- [React](https://docs.railway.com/guides/react.md): Learn how to deploy a React app to Railway with this step-by-step guide. It covers quick setup, caddy server setup, one-click deploys and other deployment strategies.
+- [Vue](https://docs.railway.com/guides/vue.md): Learn how to deploy a Vue app to Railway with this step-by-step guide. It covers quick setup, caddy server setup, one-click deploys, Dockerfile and other deployment strategies.
+- [Angular](https://docs.railway.com/guides/angular.md): Learn how to deploy an Angular app to Railway with this step-by-step guide. It covers quick setup, caddy server setup, one-click deploys, Dockerfile and other deployment strategies.
+- [Solid](https://docs.railway.com/guides/solid.md): Learn how to deploy a SolidJS app to Railway with this step-by-step guide. It covers quick setup, one-click deploys and other deployment strategies.
+- [Sails](https://docs.railway.com/guides/sails.md): Learn how to deploy a Sails app to Railway with this step-by-step guide. It covers quick setup, database integration, the Boring JavaScript stack, one-click deploys and other deployment strategies.
+- [Gatsby](https://docs.railway.com/guides/gatsby.md): Deploy a Gatsby static site to Railway with Caddy. Covers one-click template deployment, CLI deploys, GitHub deploys, and Dockerfile setup.
+- [TanStack Start](https://docs.railway.com/guides/tanstack-start.md): Deploy a TanStack Start full-stack React application to Railway. Covers GitHub deploys, CLI deploys, Dockerfile setup, and Vinxi server configuration.
+
+### Python
+
+- [FastAPI](https://docs.railway.com/guides/fastapi.md): Learn how to deploy a FastAPI app to Railway with this step-by-step guide. It covers quick setup, one-click deploys, Dockerfile and other deployment strategies.
+- [Flask](https://docs.railway.com/guides/flask.md): Learn how to deploy a Flask app to Railway with this step-by-step guide. It covers quick setup, one-click deploys, Dockerfile and other deployment strategies.
+- [Django](https://docs.railway.com/guides/django.md): Learn how to deploy a Python Django app to Railway with this step-by-step guide. It covers quick setup, database integration, private networking, Celery, one-click deploys and other deployment strategies.
+
+### PHP
+
+- [Laravel](https://docs.railway.com/guides/laravel.md): Learn how to deploy a Laravel app to Railway with this step-by-step guide. It covers quick setup, private networking, database integration, one-click deploys and other deployment strategies.
+- [Symfony](https://docs.railway.com/guides/symfony.md): Learn how to deploy a Symfony app to Railway with this step-by-step guide. It covers quick setup, database integration, cron and workers, one-click deploys and other deployment strategies.
+
+### Ruby
+
+- [Rails](https://docs.railway.com/guides/rails.md): Learn how to deploy a Rails app to Railway with this step-by-step guide. It covers quick setup, database integration, cron and sidekiq setups, one-click deploys and other deployment strategies.
+
+### Go
+
+- [Gin](https://docs.railway.com/guides/gin.md): Learn how to deploy a Gin app to Railway with this step-by-step guide. It covers quick setup, one-click deploys, Dockerfile and other deployment strategies.
+- [Go Fiber](https://docs.railway.com/guides/go-fiber.md): Learn how to deploy a Go Fiber app to Railway with this step-by-step guide. It covers quick setup, one-click deploys, Dockerfile and other deployment strategies.
+- [Beego](https://docs.railway.com/guides/beego.md): Learn how to deploy a Beego app to Railway with this step-by-step guide. It covers quick setup, private networking, database integration, one-click deploys and other deployment strategies.
+
+### Rust
+
+- [Axum](https://docs.railway.com/guides/axum.md): Learn how to deploy an Axum app to Railway with this step-by-step guide. It covers quick setup, one-click deploys, GitHub, Dockerfile and other deployment strategies.
+- [Actix Web](https://docs.railway.com/guides/actix-web.md): Learn how to deploy an Actix Web app to Railway with this step-by-step guide. It covers quick setup, Dockerfile and other deployment strategies.
+- [Rocket](https://docs.railway.com/guides/rocket.md): Learn how to deploy a Rust Rocket app to Railway with this step-by-step guide. It covers quick setup, one-click deploys, Dockerfile and other deployment strategies.
+
+### Java
+
+- [Spring Boot](https://docs.railway.com/guides/spring-boot.md): Learn how to deploy a Spring Boot app to Railway with this step-by-step guide. It covers quick setup, one-click deploys, Dockerfile and other deployment strategies.
+
+### Kotlin
+
+- [Ktor](https://docs.railway.com/guides/ktor.md): Learn how to deploy a Ktor app to Railway with this step-by-step guide. It covers quick setup, CLI deploys, Dockerfile and other deployment strategies.
+
+### C#
+
+- [ASP.NET Core](https://docs.railway.com/guides/aspnet-core.md): Learn how to deploy an ASP.NET Core app to Railway with this step-by-step guide. It covers deployment from GitHub, the CLI, and using a Dockerfile.
+
+### Scala
+
+- [Play](https://docs.railway.com/guides/play.md): Learn how to deploy a Scala Play app to Railway with this step-by-step guide. It covers quick setup, database integration, one-click deploys and other deployment strategies.
+
+### Elixir
+
+- [Phoenix](https://docs.railway.com/guides/phoenix.md): Learn how to deploy a Phoenix app to Railway with this step-by-step guide. It covers quick setup, ecto setup, database integration, one-click deploys and other deployment strategies.
+- [Phoenix + Distillery](https://docs.railway.com/guides/phoenix-distillery.md): Learn how to deploy a Phoneix app with Distillery to Railway with this step-by-step guide. It covers quick setup, ecto setup, database integration, one-click deploys and other deployment strategies.
+
+### Clojure
+
+- [Luminus](https://docs.railway.com/guides/luminus.md): Learn how to deploy your Clojure Luminus app to Railway with this step-by-step guide. It covers quick setup, database integration, one-click deploys and other deployment strategies.
+
+## CLI
+
+- [CLI](https://docs.railway.com/cli.md): Learn how to install and use the Railway CLI to manage your projects.
+- [Global options](https://docs.railway.com/cli/global-options.md): Flags available across multiple Railway CLI commands.
+- [Deploying](https://docs.railway.com/cli/deploying.md): Learn how to deploy your applications to Railway using the CLI.
+- [Telemetry](https://docs.railway.com/cli/telemetry.md): What the Railway CLI collects and how to opt out.
+- [add](https://docs.railway.com/cli/add.md): Add a service to your project.
+- [agent](https://docs.railway.com/cli/agent.md): Interact with the Railway Agent to manage your project using natural language.
+- [api](https://docs.railway.com/cli/api.md): Query the Railway public GraphQL API.
+- [autoupdate](https://docs.railway.com/cli/autoupdate.md): Manage Railway CLI auto-update preferences.
+- [bucket](https://docs.railway.com/cli/bucket.md): Manage project buckets.
+- [ca](https://docs.railway.com/cli/ca.md): Browse, launch, and manage cloud agents from a terminal interface.
+- [cdn](https://docs.railway.com/cli/cdn.md): Manage CDN caching for a service.
+- [code](https://docs.railway.com/cli/code.md): Launch a coding agent on a cloud agent VM with your own credentials.
+- [completion](https://docs.railway.com/cli/completion.md): Generate shell completion scripts.
+- [config](https://docs.railway.com/cli/config.md): Define, import, preview, and apply Railway Infrastructure as Code.
+- [connect](https://docs.railway.com/cli/connect.md): Connect to a database's shell.
+- [delete](https://docs.railway.com/cli/delete.md): Delete a project.
+- [deploy](https://docs.railway.com/cli/deploy.md): Provision a template into your project.
+- [deployment](https://docs.railway.com/cli/deployment.md): Manage deployments.
+- [dev](https://docs.railway.com/cli/dev.md): Run Railway services locally.
+- [docs](https://docs.railway.com/cli/docs.md): Open Railway Documentation in the browser.
+- [domain](https://docs.railway.com/cli/domain.md): Add, list, inspect, update, or delete domains for a service.
+- [down](https://docs.railway.com/cli/down.md): Remove the most recent deployment.
+- [environment](https://docs.railway.com/cli/environment.md): Manage environments.
+- [flag](https://docs.railway.com/cli/flag.md): Manage feature flags from the command line.
+- [functions](https://docs.railway.com/cli/functions.md): Manage project functions.
+- [init](https://docs.railway.com/cli/init.md): Create a new project.
+- [link](https://docs.railway.com/cli/link.md): Associate an existing project with the current directory.
+- [list](https://docs.railway.com/cli/list.md): List all projects in your Railway account.
+- [login](https://docs.railway.com/cli/login.md): Login to your Railway account.
+- [logout](https://docs.railway.com/cli/logout.md): Logout of your Railway account.
+- [logs](https://docs.railway.com/cli/logs.md): View build, deploy, HTTP, network flow, or DNS query logs.
+- [mcp](https://docs.railway.com/cli/mcp.md): Start, proxy, or install the Railway MCP server for AI coding tools.
+- [metrics](https://docs.railway.com/cli/metrics.md): View resource and HTTP metrics for a Railway service from the CLI.
+- [open](https://docs.railway.com/cli/open.md): Open your project dashboard in the browser.
+- [outbound-network](https://docs.railway.com/cli/outbound-network.md): Manage outbound networking settings for a service.
+- [postgres](https://docs.railway.com/cli/postgres.md): Manage PostgreSQL backups, point-in-time recovery, high availability, and connection pooling.
+- [project](https://docs.railway.com/cli/project.md): Manage projects.
+- [private-network](https://docs.railway.com/cli/private-network.md): Manage private networking for a service.
+- [redeploy](https://docs.railway.com/cli/redeploy.md): Redeploy the latest deployment of a service.
+- [restart](https://docs.railway.com/cli/restart.md): Restart the latest deployment of a service (without rebuilding).
+- [run](https://docs.railway.com/cli/run.md): Run a local command using variables from the active environment.
+- [sandbox](https://docs.railway.com/cli/sandbox.md): Manage ephemeral sandboxes.
+- [scale](https://docs.railway.com/cli/scale.md): Scale a service across regions.
+- [service](https://docs.railway.com/cli/service.md): Manage services.
+- [setup](https://docs.railway.com/cli/setup.md): Set up Railway tooling for editors and AI agents.
+- [shell](https://docs.railway.com/cli/shell.md): Open a local subshell with Railway variables available.
+- [skills](https://docs.railway.com/cli/skills.md): Install or remove Railway agent skills for AI coding tools.
+- [ssh](https://docs.railway.com/cli/ssh.md): Connect to a service via SSH and manage SSH keys.
+- [starship](https://docs.railway.com/cli/starship.md): Output metadata for Starship prompt integration.
+- [status](https://docs.railway.com/cli/status.md): Show information about the linked project, environment, and resources.
+- [templates](https://docs.railway.com/cli/templates.md): Manage Railway templates from the CLI.
+- [tcp-proxy](https://docs.railway.com/cli/tcp-proxy.md): Manage public TCP proxies for a service.
+- [unlink](https://docs.railway.com/cli/unlink.md): Disassociate project from current directory.
+- [up](https://docs.railway.com/cli/up.md): Upload and deploy project from the current directory.
+- [upgrade](https://docs.railway.com/cli/upgrade.md): Upgrade the Railway CLI to the latest version.
+- [usage](https://docs.railway.com/cli/usage.md): Inspect workspace usage and manage compute and agent usage limits.
+- [variable](https://docs.railway.com/cli/variable.md): Manage environment variables.
+- [volume](https://docs.railway.com/cli/volume.md): Manage project volumes.
+- [waf](https://docs.railway.com/cli/waf.md): Manage WAF protection for a service.
+- [whoami](https://docs.railway.com/cli/whoami.md): Get the current logged in user.
+
+## Projects
+
+- [Projects](https://docs.railway.com/projects.md): Projects are containers for environments and services in Railway.
+- [Project members](https://docs.railway.com/projects/project-members.md): Learn about the permissions for project members.
+- [Project usage](https://docs.railway.com/projects/project-usage.md): Learn how users can see the resource usage of their projects.
+- [Workspaces](https://docs.railway.com/projects/workspaces.md): Learn how you can manage a workspaces within Railway.
+
+## Build & deploy
+
+- [Build & Deploy](https://docs.railway.com/build-deploy.md): Learn how to build, configure, and deploy your applications on Railway with services, environments, variables, and more.
+- [Services](https://docs.railway.com/services.md): Discover the different types of services available in your Railway projects.
+- [Environments](https://docs.railway.com/environments.md): Manage complex development workflows via environments in your projects on Railway.
+- [Feature flags](https://docs.railway.com/feature-flags.md): Define typed feature flags with targeting rules for a Railway project, and read them at runtime with the TypeScript SDK, CLI, or MCP.
+- [Cron jobs](https://docs.railway.com/cron-jobs.md): Learn how to run cron jobs on Railway.
+- [Functions](https://docs.railway.com/functions.md): Write and deploy code from the Railway canvas without managing infrastructure or creating a git repository.
+- [Sandboxes](https://docs.railway.com/sandboxes.md): Provision ephemeral, isolated Linux environments on Railway. Create them from the dashboard, CLI, or TypeScript SDK, run commands in them, read and write their files, and tear them down when done.
+
+### Variables
+
+- [Variables](https://docs.railway.com/variables.md): Learn how to use variables and secrets across services on Railway.
+- [Reference](https://docs.railway.com/variables/reference.md): Reference documentation for Railway variables, including template syntax and all available system variables.
+
+### Config as code
+
+- [Config as code](https://docs.railway.com/config-as-code.md): Learn how to manage and deploy apps on Railway using config as code with toml and json files.
+- [Reference](https://docs.railway.com/config-as-code/reference.md): Learn how to manage and deploy apps on Railway using config as code with toml and json files.
+
+### Infrastructure as Code (IaC)
+
+- [Infrastructure as Code (IaC)](https://docs.railway.com/infrastructure-as-code.md): Define, import, preview, and apply your Railway project configuration with .railway/railway.ts.
+- [Reference](https://docs.railway.com/infrastructure-as-code/reference.md): Reference for the .railway/railway.ts TypeScript DSL.
+
+### Builds
+
+- [Builds](https://docs.railway.com/builds.md): Understand Railway's build concepts.
+- [Build configuration](https://docs.railway.com/builds/build-configuration.md): Learn how to configure Railpack, optimize build caching, and set up watchpaths.
+- [Build and start commands](https://docs.railway.com/builds/build-and-start-commands.md): Learn how to configure build and start commands.
+- [Skipped builds](https://docs.railway.com/builds/skipped-builds.md): Save build time by reusing previously built images when the source code has already been built.
+- [Dockerfiles](https://docs.railway.com/builds/dockerfiles.md): Learn Dockerfile configuration on Railway.
+- [Private registries](https://docs.railway.com/builds/private-registries.md): Learn how to deploy Docker images from private container registries on Railway.
+- [Railpack](https://docs.railway.com/builds/railpack.md): Railway uses Railpack to build and deploy your code with zero configuration.
+
+### Deployments
+
+- [Deployments](https://docs.railway.com/deployments.md): Overview of deployment concepts and configuration on Railway.
+- [Pre-deploy command](https://docs.railway.com/deployments/pre-deploy-command.md): Learn how to execute commands between building and deploying your application.
+- [Start command](https://docs.railway.com/deployments/start-command.md): Learn how to set up a start command in your service to run your deployments on Railway.
+- [Deployment actions](https://docs.railway.com/deployments/deployment-actions.md): Explore the full range of actions available on the Service Deployments tab to manage your deployments.
+- [GitHub autodeploys](https://docs.railway.com/deployments/github-autodeploys.md): Learn how to configure GitHub autodeployments.
+- [Image auto updates](https://docs.railway.com/deployments/image-auto-updates.md): Learn how to automatically keep your Docker images up to date with scheduled maintenance windows.
+- [Optimize performance](https://docs.railway.com/deployments/optimize-performance.md): Explore quick ways to optimize your app's performance on Railway.
+- [Healthchecks](https://docs.railway.com/deployments/healthchecks.md): Learn how to configure health checks to guarantee zero-downtime deployments of services on Railway.
+- [Restart policy](https://docs.railway.com/deployments/restart-policy.md): Learn how to configure the restart policy so that Railway can automatically restart your service if it crashes.
+- [Deployment teardown](https://docs.railway.com/deployments/deployment-teardown.md): Learn how to configure the deployment lifecycle to create graceful deploys with zero downtime.
+- [Monorepo](https://docs.railway.com/deployments/monorepo.md): Learn how to deploy monorepos on Railway.
+- [Staged changes](https://docs.railway.com/deployments/staged-changes.md): Discover how to use staged changes in Railway to deploy updates gradually.
+- [Serverless](https://docs.railway.com/deployments/serverless.md): Learn how Serverless reduces cost usage on Railway.
+- [Regions](https://docs.railway.com/deployments/regions.md): Deploy your apps across multiple Railway regions worldwide.
+- [Scaling](https://docs.railway.com/deployments/scaling.md): Learn how to scale your applications on Railway.
+- [Reference](https://docs.railway.com/deployments/reference.md): Deployments are attempts to build and deliver your service. Learn how they work on Railway.
+
+### Troubleshooting
+
+- [Slow deployments](https://docs.railway.com/deployments/troubleshooting/slow-deployments.md): Learn how to diagnose and fix slow deployments and application performance issues on Railway.
+- [NodeJS SIGTERM handling](https://docs.railway.com/deployments/troubleshooting/nodejs-sigterm-handling.md): SIGTERM might sometimes fail to process on shutdown. Here's why.
+- [No start command could be found](https://docs.railway.com/deployments/troubleshooting/no-start-command-could-be-found.md): Learn how to troubleshoot and fix the 'No Start Command Could be Found' error.
+
+## Data & storage
+
+- [Data & Storage](https://docs.railway.com/data-storage.md): Store and persist your application data on Railway with databases, volumes, and storage buckets.
+
+### Databases
+
+- [Databases](https://docs.railway.com/databases.md): Deploy and manage databases on Railway - PostgreSQL, MySQL, Redis, MongoDB, and any open source database you need.
+- [Build a database service](https://docs.railway.com/databases/build-a-database-service.md): Learn how to build a database service on Railway.
+- [PostgreSQL](https://docs.railway.com/databases/postgresql.md): Learn how to deploy a PostgreSQL database on Railway.
+- [PostgreSQL High Availability](https://docs.railway.com/databases/postgresql-ha.md): Convert an existing Railway PostgreSQL service to a high-availability cluster with automatic failover.
+- [PostgreSQL Connection Pooling](https://docs.railway.com/databases/postgresql-pgbouncer.md): Add PgBouncer as a connection pooler in front of your Railway PostgreSQL database or HA cluster.
+- [MySQL](https://docs.railway.com/databases/mysql.md): Learn how to deploy a MySQL database on Railway.
+- [Redis](https://docs.railway.com/databases/redis.md): Learn how to deploy a Redis database on Railway.
+- [Redis High Availability](https://docs.railway.com/databases/redis-ha.md): Convert an existing Railway Redis service to a high-availability cluster with automatic failover.
+- [MongoDB](https://docs.railway.com/databases/mongodb.md): Learn how to deploy a MongoDB database on Railway.
+- [Database view](https://docs.railway.com/databases/database-view.md): Learn how to read, insert and edit data via the database view on Railway.
+- [Reference](https://docs.railway.com/databases/reference.md): Database services on Railway.
+
+### Volumes
+
+- [Volumes](https://docs.railway.com/volumes.md): Use volumes on Railway to securely store and persist your data permanently.
+- [Backups](https://docs.railway.com/volumes/backups.md): Learn how Railway handles backups for volume contents to ensure data safety and recovery.
+- [Point-in-Time Recovery](https://docs.railway.com/volumes/point-in-time-recovery.md): Recover a Railway Postgres service to any moment within the WAL retention window using continuous pgBackRest WAL archiving.
+- [Reference](https://docs.railway.com/volumes/reference.md): Volumes are a feature that enables persistent data for services on Railway.
+
+### Storage buckets
+
+- [Storage buckets](https://docs.railway.com/storage-buckets.md): Persist assets in object storage.
+- [Uploading & serving](https://docs.railway.com/storage-buckets/uploading-serving.md): Learn how to upload and serve files from Railway Storage Buckets.
+- [Billing](https://docs.railway.com/storage-buckets/billing.md): Understand how Railway Storage Buckets are priced and billed.
+
+### Troubleshooting
+
+- [Recover PostgreSQL from corrupted WAL](https://docs.railway.com/databases/troubleshooting/postgres-corrupted-wal.md): Recover a PostgreSQL database that cannot start because its write-ahead log is corrupted.
+- [ENOTFOUND redis.railway.internal](https://docs.railway.com/databases/troubleshooting/enotfound-redis-railway-internal.md): Learn how to troubleshoot and fix the 'ENOTFOUND' redis.railway.internal error.
+
+## Networking
+
+- [Networking](https://docs.railway.com/networking.md): Overview of networking options on Railway.
+- [TCP proxy](https://docs.railway.com/networking/tcp-proxy.md): Learn how to proxy TCP traffic to a service on Railway.
+- [Outbound networking](https://docs.railway.com/networking/outbound-networking.md): Learn about outbound networking features and email delivery options on Railway.
+- [Static outbound IPs](https://docs.railway.com/networking/static-outbound-ips.md): Learn how to enable static outbound IPs on Railway.
+- [Edge networking](https://docs.railway.com/networking/edge-networking.md): Learn how Railway's global edge network routes traffic to your deployments
+- [CDN](https://docs.railway.com/networking/cdn.md): Cache static assets and HTML at the edge with Railway's built-in CDN to reduce latency and origin load.
+- [WAF](https://docs.railway.com/networking/waf.md): Protect your Railway service from malicious traffic at the edge with Railway's web application firewall (WAF).
+
+### Public networking
+
+- [Public networking](https://docs.railway.com/networking/public-networking.md): Expose your Railway services to the internet.
+- [Specs & limits](https://docs.railway.com/networking/public-networking/specs-and-limits.md): Technical specifications and rate limits for Railway's public networking.
+
+### Private networking
+
+- [Private networking](https://docs.railway.com/networking/private-networking.md): Secure service-to-service communication within your Railway project.
+- [Library configuration](https://docs.railway.com/networking/private-networking/library-configuration.md): Configure libraries and frameworks for Railway's private networking.
+
+### Domains
+
+- [Domains](https://docs.railway.com/networking/domains.md): Learn how to configure domains for your Railway services.
+- [Working with Domains](https://docs.railway.com/networking/domains/working-with-domains.md): Learn how to configure public and private domains for your Railway services.
+- [Railway Domains](https://docs.railway.com/networking/domains/railway-domains.md): Purchase and manage domains directly within Railway.
+
+### Troubleshooting
+
+- [SSL](https://docs.railway.com/networking/troubleshooting/ssl.md): Learn how to diagnose and fix common SSL certificate issues on Railway.
+- [Network diagnostics](https://docs.railway.com/networking/troubleshooting/network-diagnostics.md): Troubleshoot network issues using Railway's network diagnostic tool
+- [Application failed to respond](https://docs.railway.com/networking/troubleshooting/application-failed-to-respond.md): Learn how to troubleshoot and fix the 'Application Failed to Respond' error.
+- [405 method not allowed](https://docs.railway.com/networking/troubleshooting/405-method-not-allowed.md): Learn how to troubleshoot and fix the '405 Method Not Allowed' error.
+
+## Observability
+
+- [Observability Dashboard](https://docs.railway.com/observability.md): Explore the built-in observability dashboard on Railway.
+- [Logs](https://docs.railway.com/observability/logs.md): Learn how to view, filter, and search build, deployment, environment, HTTP, and DNS logs on Railway.
+- [Metrics](https://docs.railway.com/observability/metrics.md): Discover resource usage for your services on Railway via the Metrics tab.
+- [Webhooks](https://docs.railway.com/observability/webhooks.md): Learn how to set up webhooks on Railway to receive real-time updates for deployments and events.
+
+## Access
+
+- [Access](https://docs.railway.com/access.md): Manage your Railway account, secure it with multi-factor authentication, and enforce security policies across your team.
+- [Accounts](https://docs.railway.com/access/accounts.md): Learn about Railway Accounts
+- [Two-factor enforcement](https://docs.railway.com/access/two-factor-enforcement.md): Learn how workspace admins can require two-factor authentication for all workspace members.
+- [Multi-factor authentication](https://docs.railway.com/access/multi-factor-authentication.md): Secure your Railway account with multi-factor authentication using authenticator apps or passkeys.
+
+## Integrations
+
+- [Integrations](https://docs.railway.com/integrations.md): Integrate with Railway using OAuth and the GraphQL API.
+
+### OAuth
+
+- [OAuth](https://docs.railway.com/integrations/oauth.md): Enable users to sign in with their Railway account using OAuth 2.0 and OpenID Connect.
+- [Quickstart](https://docs.railway.com/integrations/oauth/quickstart.md): Get started with Login with Railway in 5 steps.
+- [Creating an app](https://docs.railway.com/integrations/oauth/creating-an-app.md): Create and configure OAuth applications for Login with Railway.
+- [Login & tokens](https://docs.railway.com/integrations/oauth/login-and-tokens.md): Understand the OAuth authorization flow and token lifecycle.
+- [Scopes & user consent](https://docs.railway.com/integrations/oauth/scopes-and-user-consent.md): Configure OAuth scopes to request appropriate permissions from users.
+- [Fetching workspaces or projects](https://docs.railway.com/integrations/oauth/fetching-workspaces-or-projects.md): Query workspaces and projects the user has granted access to.
+- [Managing an app](https://docs.railway.com/integrations/oauth/managing-an-app.md): Configure and manage your OAuth applications.
+- [Authorized apps](https://docs.railway.com/integrations/oauth/authorized-apps.md): Manage applications you've authorized to access your Railway account.
+- [Troubleshooting](https://docs.railway.com/integrations/oauth/troubleshooting.md): Common issues and solutions for Login with Railway.
+
+### API
+
+- [API](https://docs.railway.com/integrations/api.md): Discover the Railway GraphQL Public API.
+- [Introduction to GraphQL](https://docs.railway.com/integrations/api/graphql-overview.md): Learn what GraphQL is, why Railway uses it, and how to get started.
+- [API cookbook](https://docs.railway.com/integrations/api/api-cookbook.md): Quick reference for common Railway API operations.
+- [Manage projects](https://docs.railway.com/integrations/api/manage-projects.md): Learn how to manage projects via the public GraphQL API.
+- [Manage services](https://docs.railway.com/integrations/api/manage-services.md): Learn how to create and manage services via the public GraphQL API.
+- [Manage deployments](https://docs.railway.com/integrations/api/manage-deployments.md): Learn how to manage deployments via the public GraphQL API.
+- [Manage variables](https://docs.railway.com/integrations/api/manage-variables.md): Learn how to manage environment variables via the public GraphQL API.
+- [Manage environments](https://docs.railway.com/integrations/api/manage-environments.md): Learn how to manage environments via the public GraphQL API.
+- [Manage domains](https://docs.railway.com/integrations/api/manage-domains.md): Learn how to manage domains via the public GraphQL API.
+- [Manage volumes](https://docs.railway.com/integrations/api/manage-volumes.md): Learn how to manage persistent volumes via the public GraphQL API.
+
+### Stripe Provisioning
+
+- [Stripe Provisioning](https://docs.railway.com/integrations/stripe.md): Provision Railway databases, hosting, and storage directly from Stripe using the Agentic Provisioning Protocol.
+
+## Community
+
+- [Community](https://docs.railway.com/community.md): Get involved with the Railway community through the Conductor Program, affiliate partnerships, and bounties.
+- [The Conductor program](https://docs.railway.com/community/the-conductor-program.md): Learn about Railway’s Conductor Program and how it empowers the developer community.
+- [Affiliate program](https://docs.railway.com/community/affiliate-program.md): Show Railway to your network, earn 15% cash commission on referral revenue.
+- [Bounties](https://docs.railway.com/community/bounties.md): Learn how to earn money by helping others in the community.
+
+## More guides
+
+### AI
+
+- [Build an AI API on Hosted Inference Providers](https://docs.railway.com/guides/ai-api-hosted-inference.md): Build and deploy an AI API on Railway that calls hosted inference providers for model output. Covers provider selection, OpenAI-compatible endpoints, streaming, timeouts, and provider fallback.
+- [Build an LLM Gateway in TypeScript](https://docs.railway.com/guides/llm-gateway.md): Build and deploy an LLM gateway on Railway that issues its own API keys, enforces per-key token budgets, and tracks spend across teams. One place to hold provider keys instead of scattering them across services.
+- [Build and Deploy Your Own MCP Server](https://docs.railway.com/guides/mcp-server.md): Build a remote MCP server in TypeScript with Streamable HTTP transport and deploy it on Railway. Expose your app's data as tools that AI assistants like Claude and Cursor can call over the network.
+- [Choose Between Local and Remote MCP Servers](https://docs.railway.com/guides/local-vs-remote-mcp-servers.md): When an MCP server should run locally over stdio and when it should be a remote Streamable HTTP service. Decision factors, what the 2026 spec changed, and how to deploy the remote kind on Railway.
+- [Connect the Best MCP Servers to Your Coding Agent](https://docs.railway.com/guides/best-mcp-servers-coding-agents.md): Config snippets for connecting nine widely used MCP servers to Claude Code, Cursor, and VS Code, covering GitHub, Postgres, browser automation, docs lookup, error tracking, and deployment.
+- [Deploy a Claude Agent SDK App](https://docs.railway.com/guides/claude-agent-sdk-app.md): Deploy a Claude Agent SDK service on Railway that runs agent tasks over HTTP, streams progress as NDJSON, and stays inside the platform's request limits.
+- [Deploy a LangGraph Agent Backend](https://docs.railway.com/guides/langgraph-agent-backend.md): Run a LangGraph agent as a FastAPI service on Railway with Postgres checkpointing for durable conversation state and Claude as the LLM.
+- [Deploy a Multi-Agent System on Railway](https://docs.railway.com/guides/multi-agent-system.md): Deploy multiple AI agents as separate Railway services that communicate via Redis and Postgres. Includes working orchestrator and agent code, inter-service communication, and independent scaling.
+- [Deploy a RAG Pipeline with pgvector](https://docs.railway.com/guides/rag-pipeline-pgvector.md): Build a retrieval-augmented generation pipeline on Railway using Postgres with pgvector for vector storage, an external embedding API, and an LLM for generation. Covers document ingestion, similarity search, and deployment.
+- [Deploy a Vibe-Coded App on Railway](https://docs.railway.com/guides/vibe-coding-deploy.md): Deploy an application built with AI coding tools like Cursor, Claude Code, Bolt, or Lovable on Railway. Covers common deployment issues with AI-generated code and how to fix them.
+- [Deploy an AI Agent with Async Workers](https://docs.railway.com/guides/ai-agent-workers.md): Run AI agent workflows on Railway with an API service, async workers via Redis queue, and Postgres for state persistence. Covers CPU-based agent patterns without GPU.
+- [Deploy an AI Chatbot with Streaming Responses](https://docs.railway.com/guides/ai-chatbot-streaming.md): Deploy a chatbot on Railway that streams LLM responses token by token using Server-Sent Events. Covers Next.js with the AI SDK, API key management, and optional conversation persistence with Postgres.
+- [Deploy an AI-Powered Bot for Discord or Telegram](https://docs.railway.com/guides/ai-discord-telegram-bot.md): Deploy a Discord or Telegram bot on Railway that uses LLM APIs for conversational responses. Covers always-on deployment, API key management, conversation memory with Postgres, and rate limit handling.
+- [Deploy an AI-Powered SaaS App on Railway](https://docs.railway.com/guides/deploy-ai-saas.md): Deploy a production AI-powered SaaS application on Railway with an Express backend, Postgres database, and external LLM API integration. Covers API key management, request caching, rate limiting, and async processing for longer tasks.
+- [Deploy an LLM Gateway with LiteLLM](https://docs.railway.com/guides/ai-api-proxy.md): Deploy LiteLLM Proxy on Railway as an LLM gateway for multiple providers. Covers model routing, cost tracking, API key management, caching with Redis, and private networking.
+- [Estimate the Cost of Running AI Agents](https://docs.railway.com/guides/estimate-ai-agent-costs.md): What an always-on AI agent costs to run. How to calculate LLM API spend per run, what the hosting compute actually costs on Railway's usage-based pricing, and where the money goes as you scale.
+- [Run an Embeddings Pipeline with an External API and pgvector](https://docs.railway.com/guides/embeddings-pipeline.md): Deploy a batch worker on Railway that generates embeddings through an external API and stores them in Postgres with pgvector. Covers schema design, safe concurrent processing, and the psycopg2 vector adaptation gotcha.
+- [Run Code-Execution Sandboxes for AI Agents](https://docs.railway.com/guides/code-execution-sandboxes.md): Run AI-generated code in isolated, disposable sandboxes on Railway. What a code-execution sandbox is, why agents need one, and how to create, checkpoint, fork, and destroy sandboxes from the CLI or the TypeScript SDK.
+- [Running Agents on Railway](https://docs.railway.com/guides/running-agents-on-railway.md): Learn how to deploy always-on, autonomous AI agents on Railway by building a Claude-powered GitHub DevBot that opens pull requests in response to new issues.
+- [Self-Host Dify](https://docs.railway.com/guides/dify.md): Deploy Dify on Railway with Postgres, Redis, and persistent storage. Build AI applications, RAG pipelines, and agent workflows through Dify's visual interface.
+- [Self-Host Flowise](https://docs.railway.com/guides/flowise.md): Deploy Flowise on Railway with persistent storage and authentication. Build LLM chains, agents, and chatbots through a visual drag-and-drop interface without managing servers.
+- [Self-Host Open WebUI](https://docs.railway.com/guides/open-webui.md): Deploy Open WebUI on Railway to get a ChatGPT-like interface that connects to OpenAI, Anthropic, and other LLM providers. Includes persistent storage and authentication setup.
+- [Use Agents in Railway Sandboxes](https://docs.railway.com/guides/agents-in-sandboxes.md): Drive Railway sandboxes from your local AI coding agent. Spin up isolated environments for development, run agents against your real infrastructure, and use the create, configure, checkpoint, and fork loop to move fast.
+- [Use Object Storage for AI Agent Outputs](https://docs.railway.com/guides/object-storage-for-ai-agents.md): Store AI agent artifacts in S3-compatible object storage on Railway. Where generated files, transcripts, and reports should live, how to write them from a worker, and how to share them with presigned URLs.
+
+### Architecture
+
+- [Add Authentication to a Frontend Application](https://docs.railway.com/guides/frontend-authentication.md): Implement authentication in a frontend application deployed on Railway. Covers third-party providers (Clerk, Supabase Auth), session-based auth with Postgres, and common deployment pitfalls.
+- [Build Hybrid Search with Postgres Full-Text Search and pgvector](https://docs.railway.com/guides/hybrid-search-postgres-pgvector.md): Combine Postgres full-text search and pgvector similarity search in one database, then merge results with Reciprocal Rank Fusion. Includes schema, SQL, and a deployable Node API.
+- [Choose Between Cron Jobs, Background Workers, and Queues](https://docs.railway.com/guides/cron-workers-queues.md): When to use cron jobs, always-on workers, and message queues for background processing. Covers tradeoffs, failure modes, and how to run each pattern on Railway.
+- [Choose Between SSE and WebSockets](https://docs.railway.com/guides/sse-vs-websockets.md): When to use Server-Sent Events vs WebSockets for real-time data. Covers protocol differences, reconnection handling, and how to deploy both on Railway.
+- [Choose Between SSR, SSG, and ISR for Your Frontend](https://docs.railway.com/guides/ssr-ssg-isr.md): When to use server-side rendering, static site generation, or incremental static regeneration. Covers Railway deployment implications, cost tradeoffs, and framework support.
+- [Configure Client-Side Routing for Single-Page Applications](https://docs.railway.com/guides/spa-routing-configuration.md): Set up Caddy or Nginx to handle client-side routing for single-page applications on Railway. Avoid blank pages on refresh and configure fallback routes.
+- [Deploy a Full-Stack Next.js App with Postgres, Background Jobs, and File Uploads](https://docs.railway.com/guides/fullstack-nextjs.md): Deploy a production Next.js application on Railway with a Postgres database, Redis-backed background workers, and file uploads via storage buckets. Covers multi-service architecture and production hardening.
+- [Deploy a SaaS Backend with Postgres, Workers, and Webhooks](https://docs.railway.com/guides/saas-backend.md): Set up a production SaaS backend on Railway with an API service, Postgres database, background worker, and cron job for webhook processing.
+- [GitHub Actions Post-Deploy](https://docs.railway.com/guides/github-actions-post-deploy.md): Learn how to use GitHub Actions to run post-deployment commands.
+- [GitHub Actions PR Environment](https://docs.railway.com/guides/github-actions-pr-environment.md): Learn how to use the CLI in a GitHub Action to create environments for PRs
+- [GitHub Actions Self Hosted Runners](https://docs.railway.com/guides/github-actions-runners.md): Learn how to deploy your own scalable self hosted GitHub Actions Runners on Railway. Build your own fleet of runners for your Enterprise and then scale your self-hosted runners with Railway replicas for blazing fast builds.
+- [Isolate Staging from Production for Compliance](https://docs.railway.com/guides/isolate-staging-production.md): Separate staging and production on Railway with per-environment networks, per-environment bucket instances, and environment-scoped credentials.
+- [Manage Environment Variables in Frontend Builds](https://docs.railway.com/guides/frontend-environment-variables.md): Understand build-time vs runtime environment variables in frontend frameworks. Covers Vite, Next.js, Nuxt, SvelteKit, Astro, and Angular prefix conventions and how Railway handles each.
+- [Receive Webhooks at Scale](https://docs.railway.com/guides/webhooks-at-scale.md): Build a webhook receiver that verifies signatures, responds fast, and queues work for a background worker. Covers idempotency keys, retries, and how to run the pattern on Railway.
+- [Run Redis as a Cache vs a Persistent Store](https://docs.railway.com/guides/redis-cache-vs-store.md): Configure Redis as a cache or as a durable store on Railway. Covers the persistence settings, eviction policies, and start commands for each mode.
+- [Schedule, Retry, and Dead-Letter Jobs with BullMQ](https://docs.railway.com/guides/bullmq-jobs-retry-dlq.md): Run BullMQ on Railway with a Redis service and an always-on worker. Covers repeatable job schedules, retries with exponential backoff, and a dead-letter queue pattern.
+- [Serve a Multi-Region API with Failover](https://docs.railway.com/guides/multi-region-api-failover.md): Run one API service across multiple Railway regions with replicas, nearest-region routing, and automatic replica restarts. Covers routing behavior, health checks, and what failover Railway gives you.
+- [Stream AI Responses to a Frontend with Server-Sent Events](https://docs.railway.com/guides/streaming-ai-responses.md): Stream LLM tokens from an API service to a frontend using Server-Sent Events on Railway. Covers Express and Hono server implementations, client-side consumption, and reconnection handling.
+- [Use Storage Buckets for Uploads, Exports, and Assets](https://docs.railway.com/guides/storage-buckets-guide.md): Set up Railway storage buckets for file uploads via presigned URLs, background export generation, and asset serving through a backend proxy.
+
+### Frameworks
+
+- [Host a Documentation Site with Astro Starlight](https://docs.railway.com/guides/host-documentation-site.md): Build a documentation site with Astro Starlight and deploy it to Railway, with full-text search, a structured sidebar, and a custom domain.
+
+### Infrastructure
+
+- [Add Connection Pooling to Postgres with PgBouncer](https://docs.railway.com/guides/connection-pooling-pgbouncer.md): Why Postgres needs a connection pooler, how to add PgBouncer to a Railway Postgres service, and how to configure your application for pooled and unpooled connections.
+- [Autoscale a Service Horizontally Based on Load](https://docs.railway.com/guides/autoscale-horizontally.md): Build an autoscaler on Railway that measures load in your application and adjusts replica counts through the Public API, the CLI, or a cron schedule.
+- [Back Up and Restore Postgres](https://docs.railway.com/guides/postgres-backups-restores.md): Set up volume backups and point-in-time recovery for Postgres on Railway, take logical dumps with pg_dump, and run a restore drill so you know recovery works before you need it.
+- [Cut Idle Costs with Serverless Mode](https://docs.railway.com/guides/cut-idle-costs-serverless.md): Enable Serverless on Railway to sleep idle services and stop paying for compute they do not use. Covers the outbound-traffic sleep trigger and the cold boot tradeoff.
+- [Debug a Production Incident with Logs, Metrics, and Traces](https://docs.railway.com/guides/debug-production-incident.md): A step-by-step incident debugging workflow using Railway's built-in observability surfaces. Confirm scope with metrics, find the failure in HTTP and deployment logs, correlate requests, and mitigate with a rollback.
+- [Deploy an OpenTelemetry Collector and Backend on Railway](https://docs.railway.com/guides/deploy-an-otel-collector-stack.md): Monitor and trace your applications by deploying an OpenTelemetry Collector and backend on Railway.
+- [Deploy from a Private Container Registry](https://docs.railway.com/guides/private-container-registry.md): Deploy Docker images from private registries (GHCR, Docker Hub, GitLab, ECR, Google Artifact Registry) on Railway, from credential setup to CI-driven redeploys.
+- [Deploy Node.js & Express API with Autoscaling, Secrets, and Zero Downtime](https://docs.railway.com/guides/deploy-node-express-api-with-auto-scaling-secrets-and-zero-downtime.md): Learn how to deploy Node.js and Express applications with automatic scaling, environment secrets, zero-downtime updates, and preview environments, all without managing servers or learning Kubernetes/container orchestration.
+- [Deploy on Merge with PR Environments as Canaries](https://docs.railway.com/guides/ship-on-merge-pr-canaries.md): Set up a trunk-based promotion workflow on Railway. Every pull request gets a canary environment; every merge to main deploys production automatically.
+- [Deploy Static Sites with Zero Configuration and Custom Domains](https://docs.railway.com/guides/static-hosting.md): Learn how to deploy static websites to Railway with automatic GitHub builds, SSL certificates, custom domains, and integrate with a CDN. Perfect for marketing sites, blogs, and documentation.
+- [Deploying a Monorepo to Railway](https://docs.railway.com/guides/deploying-a-monorepo.md): Learn how to deploy a monorepo to Railway.
+- [Handle Build-Time vs Runtime Secrets in Docker Builds](https://docs.railway.com/guides/build-time-vs-runtime-secrets.md): When Docker builds on Railway can see your variables, how to pass build secrets with ARG, and why runtime secrets should never be baked into the image.
+- [Instrument an App with OpenTelemetry](https://docs.railway.com/guides/instrument-app-opentelemetry.md): Add OpenTelemetry traces and metrics to a Node.js or Python app on Railway, and send them to a collector over the private network.
+- [Load Test an App Before Launch with k6](https://docs.railway.com/guides/load-test-k6.md): Write a k6 load test, run it locally or as a Railway service, set realistic performance targets, and read Railway metrics while the test runs.
+- [Lock Down a Production Railway Project](https://docs.railway.com/guides/lock-down-production-project.md): Harden a production Railway project with Under Attack Mode, private networking, scoped API tokens, sealed variables, and workspace-level access controls.
+- [Managing Secrets on Railway](https://docs.railway.com/guides/managing-secrets-on-railway.md): How to store API keys, database URLs, and other secrets on Railway using service, shared, reference, and sealed variables, with no separate secrets manager.
+- [Migrate a Production Database into Railway with Minimal Downtime](https://docs.railway.com/guides/migrate-database-minimal-downtime.md): Move a production PostgreSQL database into Railway using dump and restore or logical replication, with a cutover checklist that keeps downtime to seconds.
+- [Preview Deployments with PR Environments](https://docs.railway.com/guides/preview-deployments-with-pr-environments.md): Learn how to use Railway PR Environments to spin up isolated, ephemeral preview deployments for every pull request, including Focused and Bot PR Environments.
+- [Right-Size CPU and Memory from Real Metrics](https://docs.railway.com/guides/right-size-cpu-memory.md): How to read the Metrics tab on Railway, translate real CPU and memory usage into a monthly cost, and set replica and usage limits that cap spend without crashing your service.
+- [Roll Back a Bad Deploy Fast](https://docs.railway.com/guides/roll-back-bad-deploy.md): How to revert a broken deployment on Railway in under a minute. Covers rollback vs redeploy vs restart, image retention limits, and healthcheck-gated deploys that stop bad code before it goes live.
+- [Rotate API Keys and Database Credentials Without Downtime](https://docs.railway.com/guides/rotate-credentials-zero-downtime.md): Use the dual-key overlap pattern, staged redeploys, and reference variables to rotate secrets on Railway with zero downtime.
+- [Scaling Your Application](https://docs.railway.com/guides/scaling-your-application.md): Learn how to scale applications on Railway with vertical autoscaling and horizontal replicas, and how to read metrics to right-size each service.
+- [Set Up Alerts for Crashes, Restarts, and Failed Deploys](https://docs.railway.com/guides/alerts-crashes-failed-deploys.md): Configure Railway webhooks and monitors to get notified in Slack, Discord, or your own service when a deployment fails, crashes, or a resource threshold is crossed.
+- [Set Up Structured Logging for a Production App](https://docs.railway.com/guides/structured-logging-production.md): Emit JSON logs from your Railway services so the Log Explorer can parse, color, and filter them by level and custom attributes.
+- [Speed Up a Global App with Cache-Control Headers and a CDN](https://docs.railway.com/guides/cache-headers-cdn.md): Set Cache-Control headers correctly for static assets, HTML, and API responses, then put a CDN in front of your Railway service to serve users from the nearest edge.
+
+### Integrations
+
+- [Add a CDN using Amazon CloudFront](https://docs.railway.com/guides/add-a-cdn-using-cloudfront.md): Learn how to integrate Amazon CloudFront as a CDN for your Fastify app in this step-by-step guide.
+- [Connect a Third-Party Observability Tool](https://docs.railway.com/guides/third-party-observability.md): Send telemetry from your Railway services to third-party observability tools. Covers vendor SDKs (Datadog, New Relic, Sentry), OpenTelemetry (OTLP), and common deployment pitfalls.
+- [Create a Bridge from Railway to AWS RDS with Tailscale](https://docs.railway.com/guides/bridge-railway-to-rds-with-tailscale.md): Learn how to securely access your AWS RDS database from Railway using a Tailscale subnet router.
+- [Deploy a Docker Compose App to Production](https://docs.railway.com/guides/docker-compose.md): Map a Docker Compose configuration to Railway services. Covers service mapping, networking, volumes, environment variables, and databases.
+- [Deploy a Jupyter Server for Team Data Work](https://docs.railway.com/guides/jupyter-server-team.md): Run a shared JupyterLab server on Railway with token authentication, a persistent volume for notebooks, and health checks for zero-downtime deploys.
+- [Deploy a Lovable App on Railway](https://docs.railway.com/guides/lovable.md): Learn how to deploy applications generated by Lovable.dev to Railway. This guide covers the workflow from prompt-based generation to continuous deployment.
+- [Deploy a WebSocket Application with Socket.IO](https://docs.railway.com/guides/socketio.md): Deploy a Socket.IO server and client on Railway. Covers CORS configuration, reconnection handling, and scaling with a Redis adapter.
+- [Deploy Caddy](https://docs.railway.com/guides/caddy.md): Learn how to deploy Caddy on Railway with one-click templates or CLI. This guide covers how to choose plugins, and configure static sites and reverse proxies.
+- [Deploy RabbitMQ and Wire Up Producers and Consumers](https://docs.railway.com/guides/rabbitmq-producers-consumers.md): Run RabbitMQ on Railway, expose the management UI, and connect producer and consumer services over private networking with Node.js and amqplib.
+- [Run ClickHouse for Product Analytics](https://docs.railway.com/guides/clickhouse-analytics.md): Deploy ClickHouse on Railway from the template or the official Docker image, size its volume for event data, and ingest and query analytics events from a Node.js service.
+- [Run Playwright in a Docker Container](https://docs.railway.com/guides/playwright.md): Deploy Playwright scripts on Railway using a Docker container with browser dependencies, font packages, and memory configuration.
+- [Self-host Ghost with MySQL and Custom Themes](https://docs.railway.com/guides/ghost.md): Deploy Ghost on Railway from the official Docker image with a MySQL database, persistent content storage, and custom domain configuration.
+- [Self-Host Keycloak for Authentication](https://docs.railway.com/guides/keycloak-authentication.md): Deploy Keycloak on Railway with a Postgres database, an admin account, and a public domain. Configure a realm and an OIDC client for your applications.
+- [Self-Host Langfuse for LLM Observability](https://docs.railway.com/guides/langfuse-llm-observability.md): Deploy Langfuse v3 on Railway with Postgres, ClickHouse, Redis, and object storage. Trace, debug, and evaluate your LLM applications on infrastructure you control.
+- [Self-host n8n](https://docs.railway.com/guides/n8n.md): Deploy n8n on Railway with persistent storage and webhook configuration. Run your own workflow automation instance without managing servers.
+- [Self-host Payload CMS with Postgres](https://docs.railway.com/guides/payload-cms.md): Deploy Payload CMS 3.x on Railway inside a Next.js application. Covers database setup, media storage with buckets, and production configuration.
+- [Self-host Strapi with Postgres and File Uploads](https://docs.railway.com/guides/strapi.md): Deploy Strapi on Railway with a Postgres database and persistent file storage. Covers one-click template deployment, environment configuration, and upload provider setup.
+- [Self-host Supabase with Postgres, Auth, and Storage](https://docs.railway.com/guides/supabase.md): Deploy the Supabase stack on Railway with Postgres, GoTrue auth, PostgREST API, storage, and the Studio dashboard. Covers multi-service setup and JWT configuration.
+- [Self-Host Uptime Kuma for Uptime Monitoring](https://docs.railway.com/guides/uptime-kuma.md): Deploy Uptime Kuma on Railway with a volume for persistent monitor history. Monitor public sites and internal services, and publish status pages.
+- [Set Up a Datadog Agent in Railway](https://docs.railway.com/guides/set-up-a-datadog-agent.md): Learn how to set up a Datadog agent in Railway.
+- [Set up a Tailscale Forwarder](https://docs.railway.com/guides/set-up-a-tailscale-forwarder.md): Learn how to access services on your private network on Railway by using a Tailscale Forwarder.
+- [Ship Application Logs to a Third-Party Aggregator](https://docs.railway.com/guides/ship-logs-third-party.md): Build a log drain on Railway with a Vector forwarder service. Apps send logs over private networking, and Vector fans them out to any aggregator.
+- [Sync Secrets from an External Secrets Manager](https://docs.railway.com/guides/external-secrets-manager.md): Keep Doppler, Infisical, or Vault as your source of truth and push secrets into Railway variables with the Public API, a sync script, or a vendor integration.
+
+## More pages
+
+- [How Private Networking Works](https://docs.railway.com/networking/private-networking/how-it-works.md): Technical deep-dive into Railway's private networking architecture.
