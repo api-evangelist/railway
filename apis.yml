@@ -18,6 +18,12 @@ position: Consumer
 access: 3rd-Party
 image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/railway.png
 tags:
+- Platform-as-a-Service
+- Deployment
+- GraphQL
+- Infrastructure
+- DevOps
+tags_raw:
 - Platform as a Service
 - Deployments
 - GraphQL
@@ -34,6 +40,11 @@ apis:
   humanURL: https://docs.railway.com/reference/public-api
   baseURL: https://backboard.railway.com/graphql/v2
   tags:
+  - GraphQL
+  - Deployment
+  - Project
+  - Services
+  tags_raw:
   - GraphQL
   - Deployments
   - Projects
