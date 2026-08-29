@@ -2,6 +2,17 @@ aid: railway
 name: Railway
 description: The Railway public API is built with GraphQL and is the same API that powers the Railway dashboard, providing automation for projects, services, deployments, environments, volumes, and CI/CD workflows on the Railway platform.
 type: Index
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: false
+  label: Hosted service · you call their endpoint
+  confidence: medium
+  source:
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: freemium
   onboarding: unknown
