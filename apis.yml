@@ -74,6 +74,8 @@ apis:
   - url: graphql/railway-graphql.md
     type: GraphQL
 common:
+- type: Website
+  url: https://www.railway.com/
 - type: TrustCenter
   url: security/railway-trust-center.yml
 - type: DomainSecurity
